@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: "common-local"
+
+logging.level:
+  org.apache.coyote.http11: debug

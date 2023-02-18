@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc.batch_size: 100
+        default_fetch_size: 100
+        order_inserts: true
+        order_updates: true
+      jakarta:
+        persistence:
+          sharedCache.mode: ALL
+---
+spring:
+  config:
+    activate:
+      on-profile: "db-local"
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+    jpa:
+      database: h2
+      database-platform: org.hibernate.dialect.H2Dialect
+      generate-ddl: true
+      show-sql: true
+    h2:
+      console:
+        enabled: true

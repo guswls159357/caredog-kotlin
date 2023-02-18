@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: caredog-kotlin
+
+  profiles:
+    active:
+      - local
+    group:
+      local:
+        - db-local
+        - common-local
+    include:
+      - db
+      - common
