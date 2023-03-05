@@ -1,3 +1,6 @@
+# jwt.secret.key: c3BhcnRhd2VlazJob21ld29ya2p3dGp3dGp3dHNlY3JldHNlY3JldGtleWtleXNwYXJ0YXdlZWsyaG9tZXdvcms=
+
+---
 spring:
   config:
     activate:
